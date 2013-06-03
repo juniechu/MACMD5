@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		059EFA86175CD3B10068BF6D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059EFA85175CD3B10068BF6D /* Cocoa.framework */; };
+		059EFA90175CD3B10068BF6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 059EFA8E175CD3B10068BF6D /* InfoPlist.strings */; };
+		059EFA92175CD3B10068BF6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 059EFA91175CD3B10068BF6D /* main.m */; };
+		059EFA96175CD3B10068BF6D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 059EFA94175CD3B10068BF6D /* Credits.rtf */; };
+		059EFA99175CD3B10068BF6D /* D9AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 059EFA98175CD3B10068BF6D /* D9AppDelegate.m */; };
+		059EFA9C175CD3B20068BF6D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059EFA9A175CD3B20068BF6D /* MainMenu.xib */; };
+		059EFAA9175CE4B00068BF6D /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 059EFAA8175CE4AF0068BF6D /* NSString+MD5Addition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		059EFA82175CD3B10068BF6D /* MACMD5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MACMD5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		059EFA85175CD3B10068BF6D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		059EFA88175CD3B10068BF6D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		059EFA89175CD3B10068BF6D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		059EFA8A175CD3B10068BF6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		059EFA8D175CD3B10068BF6D /* MACMD5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MACMD5-Info.plist"; sourceTree = "<group>"; };
+		059EFA8F175CD3B10068BF6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		059EFA91175CD3B10068BF6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		059EFA93175CD3B10068BF6D /* MACMD5-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MACMD5-Prefix.pch"; sourceTree = "<group>"; };
+		059EFA95175CD3B10068BF6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		059EFA97175CD3B10068BF6D /* D9AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D9AppDelegate.h; sourceTree = "<group>"; };
+		059EFA98175CD3B10068BF6D /* D9AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D9AppDelegate.m; sourceTree = "<group>"; };
+		059EFA9B175CD3B20068BF6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		059EFAA7175CE4AF0068BF6D /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		059EFAA8175CE4AF0068BF6D /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		059EFA7F175CD3B10068BF6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059EFA86175CD3B10068BF6D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		059EFA79175CD3B10068BF6D = {
+			isa = PBXGroup;
+			children = (
+				059EFA8B175CD3B10068BF6D /* MACMD5 */,
+				059EFA84175CD3B10068BF6D /* Frameworks */,
+				059EFA83175CD3B10068BF6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		059EFA83175CD3B10068BF6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				059EFA82175CD3B10068BF6D /* MACMD5.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		059EFA84175CD3B10068BF6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				059EFA85175CD3B10068BF6D /* Cocoa.framework */,
+				059EFA87175CD3B10068BF6D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		059EFA87175CD3B10068BF6D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				059EFA88175CD3B10068BF6D /* AppKit.framework */,
+				059EFA89175CD3B10068BF6D /* CoreData.framework */,
+				059EFA8A175CD3B10068BF6D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		059EFA8B175CD3B10068BF6D /* MACMD5 */ = {
+			isa = PBXGroup;
+			children = (
+				059EFA97175CD3B10068BF6D /* D9AppDelegate.h */,
+				059EFA98175CD3B10068BF6D /* D9AppDelegate.m */,
+				059EFA9A175CD3B20068BF6D /* MainMenu.xib */,
+				059EFA8C175CD3B10068BF6D /* Supporting Files */,
+				059EFAA7175CE4AF0068BF6D /* NSString+MD5Addition.h */,
+				059EFAA8175CE4AF0068BF6D /* NSString+MD5Addition.m */,
+			);
+			path = MACMD5;
+			sourceTree = "<group>";
+		};
+		059EFA8C175CD3B10068BF6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				059EFA8D175CD3B10068BF6D /* MACMD5-Info.plist */,
+				059EFA8E175CD3B10068BF6D /* InfoPlist.strings */,
+				059EFA91175CD3B10068BF6D /* main.m */,
+				059EFA93175CD3B10068BF6D /* MACMD5-Prefix.pch */,
+				059EFA94175CD3B10068BF6D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		059EFA81175CD3B10068BF6D /* MACMD5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059EFA9F175CD3B20068BF6D /* Build configuration list for PBXNativeTarget "MACMD5" */;
+			buildPhases = (
+				059EFA7E175CD3B10068BF6D /* Sources */,
+				059EFA7F175CD3B10068BF6D /* Frameworks */,
+				059EFA80175CD3B10068BF6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MACMD5;
+			productName = MACMD5;
+			productReference = 059EFA82175CD3B10068BF6D /* MACMD5.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		059EFA7A175CD3B10068BF6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = D9;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "zhu junjie";
+			};
+			buildConfigurationList = 059EFA7D175CD3B10068BF6D /* Build configuration list for PBXProject "MACMD5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 059EFA79175CD3B10068BF6D;
+			productRefGroup = 059EFA83175CD3B10068BF6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				059EFA81175CD3B10068BF6D /* MACMD5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		059EFA80175CD3B10068BF6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059EFA90175CD3B10068BF6D /* InfoPlist.strings in Resources */,
+				059EFA96175CD3B10068BF6D /* Credits.rtf in Resources */,
+				059EFA9C175CD3B20068BF6D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		059EFA7E175CD3B10068BF6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059EFA92175CD3B10068BF6D /* main.m in Sources */,
+				059EFA99175CD3B10068BF6D /* D9AppDelegate.m in Sources */,
+				059EFAA9175CE4B00068BF6D /* NSString+MD5Addition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		059EFA8E175CD3B10068BF6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				059EFA8F175CD3B10068BF6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		059EFA94175CD3B10068BF6D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				059EFA95175CD3B10068BF6D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		059EFA9A175CD3B20068BF6D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				059EFA9B175CD3B20068BF6D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		059EFA9D175CD3B20068BF6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		059EFA9E175CD3B20068BF6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		059EFAA0175CD3B20068BF6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MACMD5/MACMD5-Prefix.pch";
+				INFOPLIST_FILE = "MACMD5/MACMD5-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		059EFAA1175CD3B20068BF6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MACMD5/MACMD5-Prefix.pch";
+				INFOPLIST_FILE = "MACMD5/MACMD5-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		059EFA7D175CD3B10068BF6D /* Build configuration list for PBXProject "MACMD5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				059EFA9D175CD3B20068BF6D /* Debug */,
+				059EFA9E175CD3B20068BF6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		059EFA9F175CD3B20068BF6D /* Build configuration list for PBXNativeTarget "MACMD5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				059EFAA0175CD3B20068BF6D /* Debug */,
+				059EFAA1175CD3B20068BF6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 059EFA7A175CD3B10068BF6D /* Project object */;
+}
