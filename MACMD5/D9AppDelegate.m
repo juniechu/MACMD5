@@ -27,11 +27,17 @@
     NSString *tmp = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     NSString *output;
     
+    NSFileHandle *outfile = [NSFileHandle fileHandleForUpdatingAtPath:@"/Users/juniechu0618/Desktop/output"];
+    
     NSArray *numArr = [tmp componentsSeparatedByString:@"\n"];
     for (NSString *key in numArr) {
         output = [key stringFromMD5];
         NSLog(@"%@", output);
+        output = [NSString stringWithFormat:@"%d:%@\n",1,output];
+        [outfile seekToEndOfFile];
+        [outfile writeData:[output dataUsingEncoding:NSUTF8StringEncoding]];
     }
+    [outfile closeFile];
 }
 
 @end
