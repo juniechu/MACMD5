@@ -18,24 +18,32 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
-//    NSString *inputStr = @"660908B123";
-//    NSString *outputStr = [inputStr stringFromMD5];
-//    NSLog(@"%@", outputStr);
-    NSString *filePath = @"/Users/juniechu0618/Desktop/input";
-//    NSError *error;
+    NSString *filePath = @"/Users/juniechu/Desktop/ad_stat_1370230071.1370230071";
+
     NSString *tmp = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     NSString *output;
     
-    NSFileHandle *outfile = [NSFileHandle fileHandleForUpdatingAtPath:@"/Users/juniechu0618/Desktop/output"];
+    NSFileHandle *outfile = [NSFileHandle fileHandleForUpdatingAtPath:@"/Users/juniechu/Desktop/output"];
     
     NSArray *numArr = [tmp componentsSeparatedByString:@"\n"];
+    
     for (NSString *key in numArr) {
-        output = [key stringFromMD5];
-        NSLog(@"%@", output);
-        output = [NSString stringWithFormat:@"%d:%@\n",1,output];
-        [outfile seekToEndOfFile];
-        [outfile writeData:[output dataUsingEncoding:NSUTF8StringEncoding]];
+        if ([key length] < 2 || [[key substringToIndex:1] isEqualToString:@"<"] || [[key substringToIndex:1] isEqualToString:@" "]) {
+            continue;
+        }
+        if ([[key substringToIndex:4] isEqualToString:@"2013"]) {
+            if ([key length] == 27) {
+                key = [key substringWithRange:NSMakeRange(15, 12)];
+                NSLog(@"%@", key);
+                output = [key stringFromMD5];
+                output = [NSString stringWithFormat:@"%@\n",output];
+                [outfile seekToEndOfFile];
+                [outfile writeData:[output dataUsingEncoding:NSUTF8StringEncoding]];
+                
+            } else {
+                continue;
+            }
+        }
     }
     [outfile closeFile];
 }
