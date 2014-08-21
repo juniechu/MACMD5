@@ -18,12 +18,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    NSString *filePath = @"/Users/juniechu/Desktop/ad_stat_1370230071.1370230071";
+    NSString *filePath = @"**/ad_stat_1370230071.1370230071";
 
     NSString *tmp = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     NSString *output;
     
-    NSFileHandle *outfile = [NSFileHandle fileHandleForUpdatingAtPath:@"/Users/juniechu/Desktop/output"];
+    NSFileHandle *outfile = [NSFileHandle fileHandleForUpdatingAtPath:@"**/output"];
     
     NSArray *numArr = [tmp componentsSeparatedByString:@"\n"];
     
